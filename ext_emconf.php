@@ -10,31 +10,27 @@
  * writing. "version" and "dependencies" must not be touched!
  ***************************************************************/
 
-$EM_CONF[$_EXTKEY] = array (
-  'title' => 'Hide used content elements',
-  'description' => 'Removes used content elements with own colPos configuration from "Unused" column',
-  'category' => 'misc',
-  'author' => 'Nicole Cordes',
-  'author_email' => 'typo3@cordes.co',
-  'author_company' => 'biz-design',
-  'state' => 'stable',
-  'uploadfolder' => 0,
-  'createDirs' => '',
-  'clearCacheOnLoad' => 0,
-  'version' => '0.2.0',
-  'constraints' => 
-  array (
-    'depends' => 
-    array (
-      'typo3' => '9.5.0-9.5.99',
-    ),
-    'conflicts' => 
-    array (
-    ),
-    'suggests' => 
-    array (
-    ),
-  ),
-  '_md5_values_when_last_written' => 'a:12:{s:9:"ChangeLog";s:4:"9472";s:7:"LICENSE";s:4:"b234";s:9:"README.md";s:4:"3356";s:13:"composer.json";s:4:"91c4";s:12:"ext_icon.png";s:4:"ad17";s:17:"ext_localconf.php";s:4:"7562";s:16:"phpunit.xml.dist";s:4:"7d0d";s:24:"sonar-project.properties";s:4:"bd01";s:30:"Classes/Cache/CacheManager.php";s:4:"b7f6";s:36:"Classes/Hooks/PageLayoutViewHook.php";s:4:"8a3e";s:30:"Classes/Slot/TcaColPosSlot.php";s:4:"bd2a";s:36:"Resources/Public/Icons/Extension.svg";s:4:"0e56";}',
-);
+$EM_CONF[$_EXTKEY] = [
+    'title' => 'Hide used content elements',
+    'description' => 'Removes used content elements with own colPos configuration from "Unused" column',
+    'category' => 'misc',
+    'author' => 'Nicole Cordes',
+    'author_email' => 'typo3@cordes.co',
+    'author_company' => 'biz-design',
+    'state' => 'stable',
+    'uploadfolder' => 0,
+    'createDirs' => '',
+    'clearCacheOnLoad' => 0,
+    'version' => '0.2.1',
+    'constraints' => [
+        'depends' => [
+            'typo3' => '9.5.0-9.5.99',
+        ],
+        'conflicts' => [
+        ],
+        'suggests' => [
+        ],
+    ],
+    '_md5_values_when_last_written' => 'a:12:{s:9:"ChangeLog";s:4:"9472";s:7:"LICENSE";s:4:"b234";s:9:"README.md";s:4:"3356";s:13:"composer.json";s:4:"91c4";s:12:"ext_icon.png";s:4:"ad17";s:17:"ext_localconf.php";s:4:"7562";s:16:"phpunit.xml.dist";s:4:"7d0d";s:24:"sonar-project.properties";s:4:"bd01";s:30:"Classes/Cache/CacheManager.php";s:4:"b7f6";s:36:"Classes/Hooks/PageLayoutViewHook.php";s:4:"8a3e";s:30:"Classes/Slot/TcaColPosSlot.php";s:4:"bd2a";s:36:"Resources/Public/Icons/Extension.svg";s:4:"0e56";}',
+];
 
