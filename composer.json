@@ -1,5 +1,5 @@
 {
-    "name": "ichhabrecht/hide-used-content",
+    "name": "in2code/hide-used-content",
     "description": "Removes used content elements with own colPos configuration from \"Unused\" column",
     "type": "typo3-cms-extension",
     "keywords": [
