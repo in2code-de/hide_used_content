@@ -42,7 +42,7 @@ class TcaColPosEventListener
                     continue;
                 }
 
-                $colPos = (int)$fieldConfiguration['config']['overrideChildTca']['columns']['colPos']['config']['default'];
+                $colPos = (int) $fieldConfiguration['config']['overrideChildTca']['columns']['colPos']['config']['default'];
                 if (!isset($configuration[$colPos][$table])) {
                     $configuration[$colPos][$table] = [];
                 }

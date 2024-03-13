@@ -31,7 +31,7 @@ class PageLayoutViewHook
         }
 
         $record = $parameter['record'];
-        $colPos = (int)$record['colPos'];
+        $colPos = (int) $record['colPos'];
 
         foreach ($this->columnConfiguration[$colPos] ?? [] as $table => $fieldArray) {
             foreach ($fieldArray as $field) {
@@ -47,7 +47,7 @@ class PageLayoutViewHook
                     $fieldConfiguration['MM'] ?? '',
                     $record[$fieldConfiguration['foreign_field']],
                     $table,
-                    $fieldConfiguration
+                    $fieldConfiguration,
                 );
                 $valueArray = $relationHandler->getValueArray();
                 if (in_array($record['uid'], $valueArray)) {
