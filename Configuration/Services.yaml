@@ -1,5 +1,5 @@
 services:
-  IchHabRecht\HideUsedContent\Listener\TcaColPosListener:
+  IchHabRecht\HideUsedContent\EventListener\TcaColPosEventListener:
     tags:
       - name: event.listener
         identifier: 'tcaColPosListener'

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace IchHabRecht\HideUsedContent\Listener;
+namespace IchHabRecht\HideUsedContent\EventListener;
 
 use IchHabRecht\HideUsedContent\Cache\CacheManager;
 use TYPO3\CMS\Core\Configuration\Event\AfterTcaCompilationEvent;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
-class TcaColPosListener
+class TcaColPosEventListener
 {
     /**
      * @var CacheManager
@@ -25,7 +25,7 @@ class TcaColPosListener
         $this->initializeColPosCache($event->getTca());
     }
 
-    public function initializeColPosCache($tca): array
+    public function initializeColPosCache(array $tca): array
     {
         $configuration = [];
 
