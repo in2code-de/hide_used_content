@@ -16,14 +16,16 @@
             "name": "Nicole Cordes",
             "email": "typo3@cordes.co",
             "role": "Developer"
+        },
+        {
+            "name": "Oliver Eglseder",
+            "email": "oliver.eglseder@in2code.de",
+            "role": "Developer"
         }
     ],
     "require": {
-        "php": ">= 7.4, < 8.4",
-        "typo3/cms-core": "^11.5"
-    },
-    "require-dev": {
-        "nimut/testing-framework": "5.x-dev"
+        "php": "^8.1",
+        "typo3/cms-core": "^12.4"
     },
     "autoload": {
         "psr-4": {
@@ -33,16 +35,9 @@
     "replace": {
         "typo3-ter/hide-used-content": "self.version"
     },
-    "config": {
-        "vendor-dir": ".Build/vendor",
-        "bin-dir": ".Build/bin"
-    },
     "extra": {
         "typo3/cms": {
-            "extension-key": "hide_used_content",
-            "cms-package-dir": "{$vendor-dir}/typo3/cms",
-            "app-dir": ".Build",
-            "web-dir": ".Build/public"
+            "extension-key": "hide_used_content"
         }
     }
 }
