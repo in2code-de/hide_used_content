@@ -8,17 +8,12 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'typo3@cordes.co',
     'author_company' => 'biz-design',
     'state' => 'stable',
-    'uploadfolder' => 0,
-    'createDirs' => '',
-    'clearCacheOnLoad' => 0,
-    'version' => '1.1.7',
+    'version' => '2.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.0-12.4.99',
+            'typo3' => '12.0.0-12.4.99',
         ],
-        'conflicts' => [
-        ],
-        'suggests' => [
-        ],
+        'conflicts' => [],
+        'suggests' => [],
     ],
 ];

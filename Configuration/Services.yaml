@@ -1,6 +1,12 @@
 services:
-  IchHabRecht\HideUsedContent\EventListener\TcaColPosEventListener:
+  IchHabRecht\HideUsedContent\CollectColPosFromOverrides:
     tags:
       - name: event.listener
-        identifier: 'tcaColPosListener'
+        identifier: 'tx_hideusedcontent_collectcolposfromoverrides'
         event: TYPO3\CMS\Core\Configuration\Event\AfterTcaCompilationEvent
+
+  IchHabRecht\HideUsedContent\MarkContentAsUsedIfInColPos:
+    tags:
+      - name: event.listener
+        identifier: 'tx_hideusedcontent_markcontentasusedifincolpos'
+        event: TYPO3\CMS\Backend\View\Event\IsContentUsedOnPageLayoutEvent
